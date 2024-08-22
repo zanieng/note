@@ -1,4 +1,28 @@
 site_name: zanieng的笔记本
+site_url: https://zanieng.github.io/note
+repo_name: zanieng/note
+repo_url: https://github.com/zanieng/note/
 
 theme:
   name: material
+  language: 'zh'
+  icon:
+    logo: material/notebook-outline
+  custom_dir: overrides
+  features:
+    - content.code.annotate
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.top
+  font: false
+  palette:
+    - scheme: default
+
+nav: 
+  - Home:
+    - index.md
+  - 工具相关: 
+    - tools/index.md
+    - gdb 命令备忘: gdb.md
+    - git,github 命令备忘: git_github.md
