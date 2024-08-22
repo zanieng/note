@@ -5,24 +5,11 @@ repo_url: https://github.com/zanieng/note/
 
 theme:
   name: material
-  language: 'zh'
-  icon:
-    logo: material/notebook-outline
-  custom_dir: overrides
-  features:
-    - content.code.annotate
-    - navigation.tracking
-    - navigation.tabs
-    - navigation.indexes
-    - navigation.top
-  font: false
-  palette:
-    - scheme: default
 
 nav: 
   - Home:
     - index.md
   - 工具相关: 
     - tools/index.md
-    - gdb 命令备忘: gdb.md
-    - git,github 命令备忘: git_github.md
+    - gdb 命令备忘: tools/gdb.md
+    - git,github 命令备忘: tools/git_github.md
