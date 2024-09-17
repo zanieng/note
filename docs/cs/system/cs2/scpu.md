@@ -1,4 +1,4 @@
-# 计算机系统Ⅱ
+# SCPU
 ## RISC-V 架构
 1. ISA Classes(类别)
    - 栈结构(stack)
