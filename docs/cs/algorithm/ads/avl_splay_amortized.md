@@ -91,4 +91,43 @@ The balance factor BF(node) = h~L~ - h~R~.In an AVL tree,BF(node) = -1,0,or1.
 - FindMax在左子树上找到最大的节点旋转到根节点，并且把右子树接到左子树的右边（或者右子树的最小
 值，同理）
 
-## 1.3 均摊分析
+## 1.3 均摊分析( Amortized Analysis)
+Amortized time bonud定义：Any M consecutive operations take at most O(Mlog N) time
+最坏情况边界 > 均摊边界 > 平均情况边界
+>平均情况边界不能保证上述定义，和概率，期望有关
+>均摊复杂度和概率，期望无关
+### 1.3.1 均摊分析的方法
+#### 1.3.1.1 聚合分析(Aggregate analysis)
+确定n个操作的总代价上界为T(n)，单次平均代价为T(n)/n。
+<img src="pic1/pic6.png"
+    height="400"
+    width="600">
+
+T~amoritized~ = O(n)/n = O(1)
+#### 1.3.1.2 核算法(Accounting method)
+将操作序列中较早操作的余额作为“信用credit”存储，与数据结构的特定对象关联，随后用于支付摊还代价与实际代价的差额。
+
+<img src="pic1/pic7.png"
+    height="400"
+    width="600">
+
+<img src="pic1/pic8.png"
+    height="400"
+    width="600">
+
+#### 1.3.1.3 势能法(Potential method)
+与核算法类似，分析每个操作的代价，但是将势能作为一个整体函数，与
+某个对象无关。操作的摊还代价的计算为操作实际代价加上操作引起的势能变化（credit）。
+
+<img src="pic1/pic9.png"
+    height="400"
+    width="600">
+
+<img src="pic1/pic10.png"
+    height="400"
+    width="600">
+
+
+
+
+
