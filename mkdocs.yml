@@ -71,6 +71,15 @@ plugins:
 nav: 
   - Home:
     - index.md
+  - computer science:
+    - 算法相关:
+      - ads:
+        - avl_splay_amortized: cs/algorithm/ads/avl_splay_amortized.md
+      - fds:
+    - 计算机系统:
+      - 系统Ⅰ: 
+      - 系统Ⅱ: 
+        - scpu: cs/system/cs2/scpu.md
   - 工具相关: 
     - tools/index.md
     - gdb 命令备忘: tools/gdb.md
