@@ -99,6 +99,7 @@ Amortized time bonud定义：Any M consecutive operations take at most O(Mlog N)
 ### 1.3.1 均摊分析的方法
 #### 1.3.1.1 聚合分析(Aggregate analysis)
 确定n个操作的总代价上界为T(n)，单次平均代价为T(n)/n。
+聚合分析和核算法的不同是核算法假设了每一种操作的摊还代价可能不一样
 <img src="pic1/pic6.png"
     height="400"
     width="600">
@@ -116,8 +117,7 @@ T~amoritized~ = O(n)/n = O(1)
     width="600">
 
 #### 1.3.1.3 势能法(Potential method)
-与核算法类似，分析每个操作的代价，但是将势能作为一个整体函数，与
-某个对象无关。操作的摊还代价的计算为操作实际代价加上操作引起的势能变化（credit）。
+与核算法类似，分析每个操作的代价，但是将势能作为一个整体函数，与某个对象无关。操作的摊还代价的计算为操作实际代价加上操作引起的势能变化（credit）。
 
 <img src="pic1/pic9.png"
     height="400"
