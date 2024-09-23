@@ -79,7 +79,7 @@ nav:
         - cs/algorithm/ads/index.md
         - avl_splay_amortized: cs/algorithm/ads/avl_splay_amortized.md
         - RB-tree_B-tree: cs/algorithm/ads/rb-tree_B-tree.md
-      - fds:
+      - fds: cs/algorithm/fds/index.md
     - 计算机系统:
       - cs/system/index.md
       - 系统Ⅰ: cs/system/cs1/index.md
