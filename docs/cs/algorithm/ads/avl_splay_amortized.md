@@ -8,7 +8,7 @@
 ### 1.1.2 balance factor(平衡因子)的定义
 The balance factor BF(node) = h~L~ - h~R~.In an AVL tree,BF(node) = -1,0,or1.
 ### 1.1.3 树的旋转
-当高度差的约束被打破的时候（插入、删除操作的时候）就需要进行旋转，有LL,RR,LR,RL四种旋转方式
+当高度差的约束被打破的时候（插入、删除操作的时候）就需要进行旋转，有LL,RR,LR,RL四种旋转方式，一般是自下向上第一个出问题的节点是要旋转子树的根节点。
 代价：交换指针
 时间复杂度：O(1)
 
@@ -69,7 +69,7 @@ The balance factor BF(node) = h~L~ - h~R~.In an AVL tree,BF(node) = -1,0,or1.
     height="400"
     width="600">
 
-- zig-zag：即LR或RL双旋
+- zig-zag：即LR或RL双旋（转两次X）
 - zig-zig：即两次LL或RR单旋（先转P再转X）
 
 每次将被访问的节点按照上述规则旋转到根节点上为止
@@ -126,6 +126,28 @@ T~amoritized~ = O(n)/n = O(1)
 <img src="pic1/pic10.png"
     height="400"
     width="600">
+
+### 1.3.2 使用均摊法的势能法计算splay树的复杂度
+>公式：如果a+b<=c，且a和b均是正整数，则有loga + logb <= 2*logc - 2
+
+<img src="pic1/pic11.png"
+    height="400"
+    width="600">
+
+其中S(i)是子树中的所有节点个数，logS(i)是子树的rank(秩)。
+
+<img src="pic1/pic12.png"
+    height="400"
+    width="600">
+
+一共有三个操作(注意保证后两个操作的均摊值不要有常数):
+- R1是之前的,R2是现在的
+- Single rotation：我们希望最后结果和X有关，所以放缩了P点的
+- Zig-Zag：同理，也放缩到了只和X有关，使用引理将R2(P)和R2(G)换成了2*R2(X)-2，然后将R1(P)放缩成了R1(X)。
+- Zig-Zig：同理，只是需要加减一个R1(X)，与R2(G)合作放缩成R2(X)，后面同理。
+
+>得到结论：The amortized time to splay a tree with root T at node X is at most 3*(R(T)-R(X))+1 = O(logN).
+
 
 
 
