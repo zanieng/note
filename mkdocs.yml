@@ -81,7 +81,8 @@ nav:
       - fds:
     - 计算机系统:
       - 系统Ⅰ: cs/system/cs1/index.md
-      - 系统Ⅱ: cs/system/cs2/index.md
+      - 系统Ⅱ: 
+        - cs/system/cs2/index.md
         - scpu: cs/system/cs2/scpu.md
   - 工具相关: 
     - tools/index.md
