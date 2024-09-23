@@ -68,7 +68,7 @@ plugins:
   - search
   - statistics
 
-nav: 
+nav:
   - Home:
     - index.md
   - computer science:
