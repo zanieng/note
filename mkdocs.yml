@@ -3,6 +3,8 @@ site_url: https://zanieng.github.io/note
 repo_name: zanieng/note
 repo_url: https://github.com/zanieng/note/
 
+use_directory_urls: false
+
 theme:
   name: material
   language: 'zh'
@@ -50,7 +52,7 @@ markdown_extensions:
       generic: true
 
 extra_css:
-  - https://cdn.tonycrane.cc/utils/katex.min.css
+  - https://unpkg.com/katex@0/dist/katex.min.css
   - https://cdn.tonycrane.cc/jbmono/jetbrainsmono.css
   - https://cdn.tonycrane.cc/lxgw/lxgwscreen.css
   - css/tasklist.css
@@ -58,6 +60,13 @@ extra_css:
   - css/card.css
   - css/flink.css
   - css/changelog_extra.css
+
+extra_javascript:
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+  #- https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - js/katex.js
+  #- js/mathjax.js
 
 extra:
   social:

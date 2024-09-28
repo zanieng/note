@@ -14,7 +14,9 @@ The balance factor BF(node) = h~L~ - h~R~.In an AVL tree,BF(node) = -1,0,or1.
 
 #### 1.1.3.1 RR旋转
 
-![](pic1/pic1.png)
+<img src="pic1/pic1.png"
+    height="400"
+    width="600">
 
 当新插入的节点在平衡因子被打破的节点的右子树的右子树时，使用RR旋转，旋转平衡因子被打破的节点的右儿子。
 #### 1.1.3.2 LL旋转
