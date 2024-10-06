@@ -1,73 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://zanieng.github.io/note/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <loc>https://zanieng.github.io/note/index.html</loc>
+         <lastmod>2024-10-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zanieng.github.io/note/cs/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <loc>https://zanieng.github.io/note/cs/index.html</loc>
+         <lastmod>2024-10-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zanieng.github.io/note/cs/algorithm/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <loc>https://zanieng.github.io/note/cs/algorithm/index.html</loc>
+         <lastmod>2024-10-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zanieng.github.io/note/cs/algorithm/ads/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <loc>https://zanieng.github.io/note/cs/algorithm/ads/index.html</loc>
+         <lastmod>2024-10-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zanieng.github.io/note/cs/algorithm/ads/avl_splay_amortized/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <loc>https://zanieng.github.io/note/cs/algorithm/ads/avl_splay_amortized.html</loc>
+         <lastmod>2024-10-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zanieng.github.io/note/cs/algorithm/ads/rb-tree_B-tree/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <loc>https://zanieng.github.io/note/cs/algorithm/ads/heap.html</loc>
+         <lastmod>2024-10-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zanieng.github.io/note/cs/algorithm/fds/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <loc>https://zanieng.github.io/note/cs/algorithm/ads/rb-tree_B-tree.html</loc>
+         <lastmod>2024-10-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zanieng.github.io/note/cs/system/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <loc>https://zanieng.github.io/note/cs/algorithm/fds/index.html</loc>
+         <lastmod>2024-10-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zanieng.github.io/note/cs/system/cs1/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <loc>https://zanieng.github.io/note/cs/system/index.html</loc>
+         <lastmod>2024-10-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zanieng.github.io/note/cs/system/cs2/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <loc>https://zanieng.github.io/note/cs/system/cs1/index.html</loc>
+         <lastmod>2024-10-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zanieng.github.io/note/cs/system/cs2/scpu/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <loc>https://zanieng.github.io/note/cs/system/cs2/index.html</loc>
+         <lastmod>2024-10-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zanieng.github.io/note/tools/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <loc>https://zanieng.github.io/note/cs/system/cs2/scpu.html</loc>
+         <lastmod>2024-10-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zanieng.github.io/note/tools/gdb/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <loc>https://zanieng.github.io/note/tools/index.html</loc>
+         <lastmod>2024-10-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://zanieng.github.io/note/tools/git_github/</loc>
-         <lastmod>2024-09-23</lastmod>
+         <loc>https://zanieng.github.io/note/tools/gdb.html</loc>
+         <lastmod>2024-10-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://zanieng.github.io/note/tools/git_github.html</loc>
+         <lastmod>2024-10-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
