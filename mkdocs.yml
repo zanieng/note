@@ -89,6 +89,9 @@ nav:
         - avl_splay_amortized: cs/algorithm/ads/avl_splay_amortized.md
         - RB-tree_B-tree: cs/algorithm/ads/rb-tree_B-tree.md
         - heap: cs/algorithm/ads/heap.md
+        - binomal_queue: cs/algorithm/ads/binomial_queue.md
+        - invert file index: cs/algorithm/ads/invert_file_index.md
+        - algorithm: cs/algorithm/ads/algorithm.md
       - fds: cs/algorithm/fds/index.md
     - 计算机系统:
       - cs/system/index.md
