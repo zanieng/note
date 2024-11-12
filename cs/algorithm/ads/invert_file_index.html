@@ -8,28 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://zanieng.github.io/note/cs/index.html">
+        <link rel="canonical" href="https://zanieng.github.io/note/cs/algorithm/ads/invert_file_index.html">
       
       
-        <link rel="prev" href="../index.html">
+        <link rel="prev" href="binomial_queue.html">
       
       
-        <link rel="next" href="algorithm/index.html">
+        <link rel="next" href="algorithm.html">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
     
     
       
-        <title># Computer Science - zanieng的笔记本</title>
+        <title>invert file index - zanieng的笔记本</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.3cba04c6.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,17 +48,17 @@
     
       <link rel="stylesheet" href="https://cdn.tonycrane.cc/lxgw/lxgwscreen.css">
     
-      <link rel="stylesheet" href="../css/tasklist.css">
+      <link rel="stylesheet" href="../../../css/tasklist.css">
     
-      <link rel="stylesheet" href="../css/custom.css">
+      <link rel="stylesheet" href="../../../css/custom.css">
     
-      <link rel="stylesheet" href="../css/card.css">
+      <link rel="stylesheet" href="../../../css/card.css">
     
-      <link rel="stylesheet" href="../css/flink.css">
+      <link rel="stylesheet" href="../../../css/flink.css">
     
-      <link rel="stylesheet" href="../css/changelog_extra.css">
+      <link rel="stylesheet" href="../../../css/changelog_extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -84,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#computer-science" class="md-skip">
+        <a href="#invert-file-index" class="md-skip">
           跳转至
         </a>
       
@@ -98,7 +98,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href=".." title="zanieng的笔记本" class="md-header__button md-logo" aria-label="zanieng的笔记本" data-md-component="logo">
+    <a href="../../.." title="zanieng的笔记本" class="md-header__button md-logo" aria-label="zanieng的笔记本" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 4v6l-2-2-2 2V4H9v16h10V4h-2M3 7V5h2V4a2 2 0 0 1 2-2h12c1.05 0 2 .95 2 2v16c0 1.05-.95 2-2 2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7H3m2-2v2h2V5H5m0 14h2v-2H5v2m0-6h2v-2H5v2Z"/></svg>
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              # Computer Science
+              invert file index
             
           </span>
         </div>
@@ -213,7 +213,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../index.html" class="md-tabs__link">
+        <a href="../../../index.html" class="md-tabs__link">
           
   
     
@@ -235,7 +235,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="index.html" class="md-tabs__link">
+        <a href="../../index.html" class="md-tabs__link">
           
   
     
@@ -255,7 +255,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../tools/index.html" class="md-tabs__link">
+        <a href="../../../tools/index.html" class="md-tabs__link">
           
   
     
@@ -290,7 +290,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="zanieng的笔记本" class="md-nav__button md-logo" aria-label="zanieng的笔记本" data-md-component="logo">
+    <a href="../../.." title="zanieng的笔记本" class="md-nav__button md-logo" aria-label="zanieng的笔记本" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 4v6l-2-2-2 2V4H9v16h10V4h-2M3 7V5h2V4a2 2 0 0 1 2-2h12c1.05 0 2 .95 2 2v16c0 1.05-.95 2-2 2H7c-1.05 0-2-.95-2-2v-1H3v-2h2v-4H3v-2h2V7H3m2-2v2h2V5H5m0 14h2v-2H5v2m0-6h2v-2H5v2Z"/></svg>
@@ -341,7 +341,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../index.html" class="md-nav__link ">
+            <a href="../../../index.html" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -406,7 +406,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="index.html" class="md-nav__link md-nav__link--active">
+            <a href="../../index.html" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -417,7 +417,7 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_2" id="__nav_2_label" tabindex="">
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
@@ -436,6 +436,8 @@
                 
   
   
+    
+  
   
   
     
@@ -457,16 +459,16 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="algorithm/index.html" class="md-nav__link ">
+            <a href="../index.html" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -483,7 +485,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             算法相关
@@ -496,6 +498,8 @@
                 
   
   
+    
+  
   
   
     
@@ -523,16 +527,16 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="algorithm/ads/index.html" class="md-nav__link ">
+            <a href="index.html" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -549,7 +553,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2_2">
             <span class="md-nav__icon md-icon"></span>
             ads
@@ -565,7 +569,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algorithm/ads/avl_splay_amortized.html" class="md-nav__link">
+      <a href="avl_splay_amortized.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -586,7 +590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algorithm/ads/rb-tree_B-tree.html" class="md-nav__link">
+      <a href="rb-tree_B-tree.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -607,7 +611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algorithm/ads/heap.html" class="md-nav__link">
+      <a href="heap.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -628,7 +632,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algorithm/ads/binomial_queue.html" class="md-nav__link">
+      <a href="binomial_queue.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -646,10 +650,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="algorithm/ads/invert_file_index.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    invert file index
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="invert_file_index.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -658,6 +682,140 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#term-document-incidence-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      Term-Document Incidence Matrix 文档关联矩阵
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inverted-file-index" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inverted File Index 倒排文件索引
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#index-generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Index generator 索引生成器
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用不同的数据结构进行倒排索引
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      存储空间不足时
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="存储空间不足时">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      多块内存存储
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      分布式索引
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      动态索引
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compression 压缩
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thresholding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Thresholding 阈值，检索的优化
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      搜索引擎的评价标准
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      准确率和召回率
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -670,7 +828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algorithm/ads/algorithm.html" class="md-nav__link">
+      <a href="algorithm.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -699,7 +857,7 @@
   
   
     <li class="md-nav__item">
-      <a href="algorithm/fds/index.html" class="md-nav__link">
+      <a href="../fds/index.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -755,7 +913,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="system/index.html" class="md-nav__link ">
+            <a href="../../system/index.html" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -788,7 +946,7 @@
   
   
     <li class="md-nav__item">
-      <a href="system/cs1/index.html" class="md-nav__link">
+      <a href="../../system/cs1/index.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -832,7 +990,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="system/cs2/index.html" class="md-nav__link ">
+            <a href="../../system/cs2/index.html" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -865,7 +1023,7 @@
   
   
     <li class="md-nav__item">
-      <a href="system/cs2/scpu.html" class="md-nav__link">
+      <a href="../../system/cs2/scpu.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -934,7 +1092,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../tools/index.html" class="md-nav__link ">
+            <a href="../../../tools/index.html" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -967,7 +1125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tools/gdb.html" class="md-nav__link">
+      <a href="../../../tools/gdb.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -988,7 +1146,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tools/git_github.html" class="md-nav__link">
+      <a href="../../../tools/git_github.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1036,9 +1194,114 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#table-of-contents" class="md-nav__link">
+  <a href="#term-document-incidence-matrix" class="md-nav__link">
     <span class="md-ellipsis">
-      Table of Contents
+      Term-Document Incidence Matrix 文档关联矩阵
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inverted-file-index" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inverted File Index 倒排文件索引
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#index-generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Index generator 索引生成器
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      使用不同的数据结构进行倒排索引
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      存储空间不足时
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="存储空间不足时">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      多块内存存储
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      分布式索引
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      动态索引
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compression 压缩
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thresholding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Thresholding 阈值，检索的优化
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      搜索引擎的评价标准
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      准确率和召回率
     </span>
   </a>
   
@@ -1062,22 +1325,98 @@
   
 
 
-<h1 id="computer-science"># Computer Science<a class="headerlink" href="#computer-science" title="Permanent link">&para;</a></h1>
+<h1 id="invert-file-index">Invert File Index（倒排索引）<a class="headerlink" href="#invert-file-index" title="Permanent link">&para;</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 60 个字 </p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 979 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 3 分钟</p>
 </div>
-<div class="admonition abstract">
-<p class="admonition-title">Abstract</p>
-<p>这里是计算机科学相关内容的笔记</p>
-</div>
-<h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
+<h2 id="term-document-incidence-matrix">Term-Document Incidence Matrix 文档关联矩阵<a class="headerlink" href="#term-document-incidence-matrix" title="Permanent link">&para;</a></h2>
 <ul>
-<li>计算机类课程笔记：</li>
-<li>数据结构基础：algorithm/fds/</li>
-<li>高级数据结构与算法分析：algorithm/ads/</li>
-<li>计算机系统Ⅰ：system/cs1/</li>
-<li>计算机系统Ⅱ：system/cs2/</li>
+<li>a matrix of the appearance of each word in each doc</li>
+<li>行是词，列是文档号；(i,j)表明第i个词是否在第j篇文章出现</li>
+<li>如果单词在某篇文章中出现，则对应的矩阵上位置的值为1，否则为0，若干篇文章的出现情况可以得到若干个二进制字符串</li>
+<li>只关注一个单词出现与否，并不关注出现的频率，也找不出单词在文章的哪个位置</li>
+<li>一个短语调换顺序也会被找出来，不过我们不关注顺序，重要的是出现与否</li>
+<li>用逻辑运算可以考察单词在doc中的出现情况</li>
+<li>位运算取交一下，快速排序，从频率低的开始交，这样效率高</li>
 </ul>
+<h2 id="inverted-file-index">Inverted File Index 倒排文件索引<a class="headerlink" href="#inverted-file-index" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Index is a mechanism for locating a given term in a text 一种在文章中定位给定单词的机制</li>
+<li>Inverted File contains a list of pointers to all occurrences of that term in the text</li>
+<li>索引的方式 单词---&lt;次数；依次列出每一篇出现的doc的编号&gt;</li>
+<li>更好的索引方式 单词----&lt;次数；(出现的doc的编号；该doc中每一个出现的位置)&gt;</li>
+</ul>
+<h2 id="index-generator">Index generator 索引生成器<a class="headerlink" href="#index-generator" title="Permanent link">&para;</a></h2>
+<ol>
+<li>从文件中读取词</li>
+<li>将该词提取为词干(word stemming)，即去除第三人称形式、过去式、进行时等形式，留下词干），并去除分词(stop word)，即”a”, “is”等没有意义的词。</li>
+<li>检查该词是否已经在词典之中。</li>
+<li>若不在，则将该词添加入词典之中。更新索引信息。</li>
+<li>建立完毕后，将索引文件存入磁盘</li>
+</ol>
+<p><img src="pic3/pic4.png"
+    width="600"
+    height="400"></p>
+<h2 id="_1">使用不同的数据结构进行倒排索引<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Hashing：一个词的时候Hash很快；花费常数时间，访问更快，但是存储不灵活，而且不适合进行范围查找（While accessing a term by hashing in an inverted file index, range searches are expensive.）</li>
+<li>Search Tres(B+ trees)：范围内的搜索Search Trees更好，而且在显示应用中B+ Trees更常用。</li>
+</ol>
+<h2 id="_2">存储空间不足时<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="_3">多块内存存储<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>using the memory block and merge them in the end，最后合并时采用类似归并排序的方法进行。</p>
+<p><img src="pic3/pic5.png"
+    width="600"
+    height="400"></p>
+<h3 id="_4">分布式索引<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>一部分在某一机器，另外一部分在另外一机器
+- term-partitioned index 按词语来划分
+- document-partitioned index 按照文档的编号来划分（第二种方法更加实用）</p>
+</blockquote>
+<h3 id="_5">动态索引<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li>文档要随时更新</li>
+<li>动态索引由main index(主索引)和auxiliary index(辅助索引)构成</li>
+<li>维护两套索引，一套主索引，一套辅助索引</li>
+<li>新的文档放到辅助索引，查询(query)时两个都查询，等过一段时间再放进主索引中，删除时只会加个标记，不会真的删掉。</li>
+</ul>
+<h3 id="compression">Compression 压缩<a class="headerlink" href="#compression" title="Permanent link">&para;</a></h3>
+<ul>
+<li>去除掉非常频繁出现的词汇</li>
+<li>把所有的term放进一个大字符串里，term只保存对应项在大字符串的位置</li>
+<li>每个次在一个文章中的索引使用相对值，即两个索引间的差值。</li>
+</ul>
+<p><img src="pic3/pic6.png"
+    width="600"
+    height="400"></p>
+<h2 id="thresholding">Thresholding 阈值，检索的优化<a class="headerlink" href="#thresholding" title="Permanent link">&para;</a></h2>
+<ul>
+<li>document：只检索(retrieve)前面x个按权重排序的文档</li>
+<li>对于布尔查询无效（feasible，可行的）</li>
+<li>会遗漏一些重要的文档，因为有截断</li>
+<li>query：把带查询的terms按照出现的频率升序排序，权重赋值</li>
+</ul>
+<h2 id="_6">搜索引擎的评价标准<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<ul>
+<li>how fast does it index 索引有多快</li>
+<li>文档的数量/时间</li>
+<li>how fast does it search 搜索有多快</li>
+<li>Expressiveness of query language 查询语言的表现</li>
+<li>表达复杂信息的能力</li>
+<li>复杂查询的速度</li>
+<li>用户的满意程度
+  <img src="pic3/pic7.png" width="600" height="200"></li>
+</ul>
+<h2 id="_7">准确率和召回率<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p><img src="pic3/pic8.png" width="600" height="400"></p>
+<p>评估相关度：
+1. A benchmark document collection 基准测试集文档
+2. A benchmark suite of queries 基准query
+3. A binary assessment of either Relevant or Irrelevant for each query-doc pair 手工标注是否关联 构建测试集</p>
+<p>找的这群东西里找得准不准：准确率precision <span class="arithmatex">\(P=R_R/(R_R+I_R)\)</span>
+找得全不全：召回率 recall <span class="arithmatex">\(R=R_R/(R_R+R_N)\)</span>
+<img src="pic3/pic9.png" width="600" height="400"></p>
 
 
 
@@ -1145,16 +1484,16 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate", "navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.top"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "navigation.tracking", "navigation.tabs", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
         <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
       
         <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
       
-        <script src="../js/katex.js"></script>
+        <script src="../../../js/katex.js"></script>
       
     
   </body>
