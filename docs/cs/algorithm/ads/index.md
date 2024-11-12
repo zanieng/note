@@ -6,3 +6,7 @@
 ## Table of Contents
 - [AVL Trees,Splay Trees,and Amortized Analysis](avl_splay_amortized/)
 - [Red-Black Trees and B+ Trees](rb-tree_B-tree/)
+- [heap](heap/)
+- [binomal_queue](binomal_queue/)
+- [invert file index](invert_file_index/)
+- [algorithm](algorithm/)
