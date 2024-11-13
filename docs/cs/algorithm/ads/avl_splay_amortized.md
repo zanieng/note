@@ -95,8 +95,7 @@ $$n_h=\frac{1}{\sqrt[]5}(\frac{1+\sqrt[]5}{2})^{h+3}-1$$
 ### 1.2.6 删除
 - 找到要删除的节点X并将其旋转到根节点
 - 把根节点删除，产生左右两棵子树
-- FindMax在左子树上找到最大的节点旋转到根节点，并且把右子树接到左子树的右边（或者右子树的最小
-值，同理）
+- FindMax在左子树上找到最大的节点旋转到根节点，并且把右子树接到左子树的右边（或者右子树的最小值，同理）
 
 ## 1.3 均摊分析( Amortized Analysis)
 Amortized time bonud定义：Any M consecutive operations take at most O(Mlog N) time
@@ -141,7 +140,7 @@ T~amoritized~ = O(n)/n = O(1)
     height="400"
     width="600">
 
-其中S(i)是子树中的所有节点个数，logS(i)是子树的rank(秩)。
+其中S(i)是子树中的所有节点个数，logS(i)是子树的rank(秩)。我们采用把所有结点的后代取对数然后求和的方式定义势函数，这样在旋转过后大部分结点后代数不变，只有少量结点发生变化，于是减法时可以消去。
 
 <img src="pic1/pic12.png"
     height="400"

@@ -89,15 +89,15 @@ BinQueue Merge( BinQueue H1, BinQueue H2 )
 #### insert的摊还分析
 ##### 聚合法
 聚合法需要每一步的操作复杂度，实际上我们随便模拟几步再结合之前讨论的合并和二进制加法之间的关系就可以发现，插入的整个操作与二进制数加 1 有完全的对应关系：若是遇到了某一位是 1+1，则用常数操作完成简单的合并即可，如果遇到 0+1，那么当前所有的二项树合起来就是最后的结果。基于这一观察我们知道，因为 0+1 对应将 0 置 1，1+1 对应 1 置 0，这两种情况都对应于堆的常数时间操作，因此从空树连续插入 n 个节点的时间复杂度是 0 + 1 + 1 · · ·（n 个 1）的过程中数据二进制表示中 0 和 1 比特翻转的次数总和。
-于是算法复杂度就很好计算了，因为我们知道 n 对应于$ \lfloor {\log n} \rfloor+1 $个二进制位，事实上最低位每次加1 都会反转比特，次低位每两次运算反转比特，倒数第三位每 4 次运算反转比特...... 以此类推，n 次操
-作的整体时间复杂度与
+于是算法复杂度就很好计算了，因为我们知道 n 对应于$ \lfloor {\log n} \rfloor+1 $个二进制位，事实上最低位每次加1 都会反转比特，次低位每两次运算反转比特，倒数第三位每 4 次运算反转比特······ 以此类推，n 次操作的整体时间复杂度与
 $$ n+\frac{n}{2}+\frac{n}{4}+···+\frac{n}{2^{\lfloor {\log n} \rfloor+1}} $$
 成正比，根据等比数列求和可知上述求和是小于 2n 的（取 n → ∞ 才能到 2n），所以单步操作的常数摊还时间$o(1)$也就得到了。
 <img src="pic4/pic2.png" width="600" height="400">
 
 ##### 势能法
 <img src="pic4/pic3.png" width="600" height="400">
-从一个空的二项队列开始插入N个元素最多消耗$O(N)$的时间，因此均摊到每一个操作上的时间复杂度是常数时间$O(1)$。
+
+从一个空的二项队列开始插入N个元素最多消耗 $O(N)$ 的时间，因此均摊到每一个操作上的时间复杂度是常数时间$O(1)$。
 
 ### DeleteMin
 DeleteMin 操作在 PPT 第 6 页也展示得很清楚了，实际上就是先用 $O(\log n)$ 的时间找到根的最小值（或 $O(1)$，但这表明最后还需要更新最小值），设根最小的堆对应 $B_k$，于是我们可以得到两个堆，其一是整个二项堆移除 $B_k$ 后剩下的堆，其二是 $B_k$ 移除根结点后得到的堆，将这两个堆合并即可，时间复杂度显然是 $O(\log n)$。
@@ -121,7 +121,7 @@ ElementType DeleteMin( BinQueue H )
     OldRoot = DeletedTree; /* Step 3.1: remove the root */
     DeletedTree = DeletedTree->LeftChild; free(OldRoot);
     DeletedQueue = Initialize(); /* Step 3.2: create H” */
-    DeletedQueue->CurrentSize = ( 1<<MinTree ) – 1; /* 2MinTree – 1 */
+    DeletedQueue->CurrentSize = ( 1<<MinTree ) – 1; /* 2^-MinTree – 1 */
     for ( j = MinTree – 1; j >= 0; j – – ) {
         DeletedQueue->TheTrees[j] = DeletedTree;
         DeletedTree = DeletedTree->NextSibling;

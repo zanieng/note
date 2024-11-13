@@ -50,7 +50,7 @@ using the memory block and merge them in the end，最后合并时采用类似�
 ### Compression 压缩
 - 去除掉非常频繁出现的词汇
 - 把所有的term放进一个大字符串里，term只保存对应项在大字符串的位置
-- 每个次在一个文章中的索引使用相对值，即两个索引间的差值。
+- 每个词在一个文章中的索引使用相对值，即两个索引间的差值。
 
 <img src="pic3/pic6.png"
     width="600"
